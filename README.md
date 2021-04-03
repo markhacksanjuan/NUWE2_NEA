@@ -8,6 +8,7 @@ Link to deployed app: [NUWE 2](https://nuwe2-nea.herokuapp.com/)
 npm install
 
 ## Environment variables
+
 Remember to create .env file with MONGODB_URL and JWT_SECRET
 ---
 
