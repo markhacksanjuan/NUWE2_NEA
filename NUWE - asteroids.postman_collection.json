@@ -1,0 +1,518 @@
+{
+	"info": {
+		"_postman_id": "1f8cae62-b5c0-40d8-b0f1-43023b262842",
+		"name": "NUWE - asteroids",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "AUTH - POST - SIGNUP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test\",\n    \"lastName\": \"Test\",\n    \"email\": \"test@test.com\",\n    \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AUTH - POST - LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"mark@mark.com\",\n    \"password\": \"mark\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "USER - POST - GET ONE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"mark@mark.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/getOne",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"getOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET - GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/getOneById/6068a2d8f60c651fab9d321c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"getOneById",
+								"6068a2d8f60c651fab9d321c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - POST - DELETE ONE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@test.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/deleteOne",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"deleteOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET - DELETE BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/deleteOneById/6068a5f91a68872123a483bc",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"deleteOneById",
+								"6068a5f91a68872123a483bc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - POST - EDIT ONE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test5\",\n    \"lastName\": \"test2\",\n    \"email\": \"test@test.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/editUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"editUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET - EDIT BY ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test1\",\n    \"lastName\": \"test2\",\n    \"email\": \"test@test.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/editUserById/6068a622517f9f2160be285b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"editUserById",
+								"6068a622517f9f2160be285b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NEA",
+			"item": [
+				{
+					"name": "NEA - GET - asteroid page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/asteroid",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - GET - INSERT ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/asteroid/insertAll",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"insertAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - GET - DELETE ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/asteroid/deleteAll",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"deleteAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - GET ALL ASTEROIDS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/asteroid/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - POST - CREATE ONE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"mark\",\n    \"a\": \"1\",\n    \"e\": \"1\",\n    \"i\": \"1\",\n    \"om\": \"1\",\n    \"w\": \"1\",\n    \"ma\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/asteroid/createOne",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"createOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - POST - GET ONE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwNjhhMmQ4ZjYwYzY1MWZhYjlkMzIxYyIsImVtYWlsIjoibWFya0BtYXJrLmNvbSJ9LCJpYXQiOjE2MTc0NzE4NzYsImV4cCI6MTYxNzU1ODI3Nn0.xrt2MtaTomKnWEolWuRvULqM975WqTnRxcOsdCEh8Xg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullName\": \"27002 (1998 DV9)\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/asteroid/getOne",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"getOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - POST - EDIT ONE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"mark\",\n    \"a\": \"1\",\n    \"e\": \"2\",\n    \"i\": \"2\",\n    \"om\": \"2\",\n    \"w\": \"2\",\n    \"ma\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/asteroid/editOne",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"editOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - POST - EDIT BY ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"mark1\",\n    \"a\": \"3\",\n    \"e\": \"2\",\n    \"i\": \"2\",\n    \"om\": \"2\",\n    \"w\": \"2\",\n    \"ma\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/asteroid/editOneById/60689e13808d9c1c1543a2af",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"editOneById",
+								"60689e13808d9c1c1543a2af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - POST - DELETE ONE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullName\": \"mark\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/asteroid/deleteOne",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"deleteOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - GET - DELETE BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/asteroid/deleteOneById/6068a21950c29d1f4a904c96",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"deleteOneById",
+								"6068a21950c29d1f4a904c96"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEA - GET - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/asteroid/getOneById/60688b8f14e07e14dc30e186",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"asteroid",
+								"getOneById",
+								"60688b8f14e07e14dc30e186"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

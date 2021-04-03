@@ -34,16 +34,18 @@ const user = require('./routes/user.routes')
 app.use('/user', user)
 const auth = require('./routes/auth.routes')
 app.use('/auth', auth)
+const test = require('./routes/test.routes')
+app.use('/test', test)
 
 // --- ERROR ROUTES ---
 app.use((req, res, next) => {
     res.status(404).send('Page not found')
 })
-// app.use((err, req, res, next) => {
-//     if(!res.headersSent) {
-//         res.status(500).send('Error')
-//     }
-// })
+app.use((err, req, res, next) => {
+    if(!res.headersSent) {
+        res.status(500).send('Error')
+    }
+})
 
 // --- SERVER LISTEN --- 
 app.listen(PORT, () => {

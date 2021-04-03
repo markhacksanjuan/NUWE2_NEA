@@ -5,6 +5,7 @@ const LocalStrategy = require('passport-local').Strategy
 const User = require('../models/user.model')
 const bcrypt = require('bcrypt')
 
+// LOGIN strategy with local Strategy from Passport
 passport.use(
     'login',
     new LocalStrategy(
@@ -25,6 +26,7 @@ passport.use(
         }
     )
 )
+// JWT strategy
 passport.use(
     'jwt',
     new JwtStrategy(
