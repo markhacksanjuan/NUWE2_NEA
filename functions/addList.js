@@ -7,7 +7,8 @@ const addList = async (model, list) => {
             await Nea.insertMany(list)
             break;
         case 'user':
-            return await User.insertMany(list)
+            await User.insertMany(list)
+            break
         default:
             break;
     }
