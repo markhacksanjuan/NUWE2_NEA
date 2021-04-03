@@ -2,13 +2,12 @@ require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
-const passport = require('passport')
 const cors = require('cors')
 
 // --- EXPRESS ---
 const app = express()
 
-// --- DATABASE ---
+// --- DATABASE CONFIG ---
 require('./configs/db.config')
 
 // --- PORT ---
