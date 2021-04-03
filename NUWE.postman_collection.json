@@ -513,6 +513,560 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "DEPLOY",
+			"item": [
+				{
+					"name": "AUTH",
+					"item": [
+						{
+							"name": "AUTH - POST - SIGNUP - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test\",\n    \"lastName\": \"Test\",\n    \"email\": \"test@test.com\",\n    \"password\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/auth/signup",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AUTH - POST - LOGIN - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"mark@mark.com\",\n    \"password\": \"mark\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/auth/login",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "USER",
+					"item": [
+						{
+							"name": "USER - POST - GET ONE - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"mark@mark.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/getOne",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"getOne"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "USER - GET - GET ALL - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/getAll",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"getAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "USER - GET - GET BY ID - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/getOneById/6068a2d8f60c651fab9d321c",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"getOneById",
+										"6068a2d8f60c651fab9d321c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "USER - POST - DELETE ONE - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test@test.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/deleteOne",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"deleteOne"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "USER - GET - DELETE BY ID - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/deleteOneById/6068a5f91a68872123a483bc",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"deleteOneById",
+										"6068a5f91a68872123a483bc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "USER - POST - EDIT ONE - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"test5\",\n    \"lastName\": \"test2\",\n    \"email\": \"test@test.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/editUser",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"editUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "USER - GET - EDIT BY ID - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"test1\",\n    \"lastName\": \"test2\",\n    \"email\": \"test@test.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/user/editUserById/6068a622517f9f2160be285b",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"user",
+										"editUserById",
+										"6068a622517f9f2160be285b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "NEA",
+					"item": [
+						{
+							"name": "NEA - GET - asteroid page - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - GET - INSERT ALL - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/insertAll",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"insertAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - GET - DELETE ALL - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/deleteAll",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"deleteAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - GET ALL ASTEROIDS - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/getAll",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"getAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - POST - CREATE ONE - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"full_name\": \"mark\",\n    \"a\": \"1\",\n    \"e\": \"1\",\n    \"i\": \"1\",\n    \"om\": \"1\",\n    \"w\": \"1\",\n    \"ma\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/createOne",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"createOne"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - POST - GET ONE - DEPLOY",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwNjhhMmQ4ZjYwYzY1MWZhYjlkMzIxYyIsImVtYWlsIjoibWFya0BtYXJrLmNvbSJ9LCJpYXQiOjE2MTc0NzE4NzYsImV4cCI6MTYxNzU1ODI3Nn0.xrt2MtaTomKnWEolWuRvULqM975WqTnRxcOsdCEh8Xg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fullName\": \"27002 (1998 DV9)\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/getOne",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"getOne"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - POST - EDIT ONE - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"full_name\": \"mark\",\n    \"a\": \"1\",\n    \"e\": \"2\",\n    \"i\": \"2\",\n    \"om\": \"2\",\n    \"w\": \"2\",\n    \"ma\": \"2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/editOne",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"editOne"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - POST - DELETE ONE - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fullName\": \"mark\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/deleteOne",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"deleteOne"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - POST - EDIT BY ID - DEPLOY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"full_name\": \"mark1\",\n    \"a\": \"3\",\n    \"e\": \"2\",\n    \"i\": \"2\",\n    \"om\": \"2\",\n    \"w\": \"2\",\n    \"ma\": \"2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/editOneById/60689e13808d9c1c1543a2af",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"editOneById",
+										"60689e13808d9c1c1543a2af"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - GET - DELETE BY ID - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/deleteOneById/6068a21950c29d1f4a904c96",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"deleteOneById",
+										"6068a21950c29d1f4a904c96"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA - GET - GET BY ID - DEPLOY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nuwe2-nea.herokuapp.com/asteroid/getOneById/60688b8f14e07e14dc30e186",
+									"protocol": "https",
+									"host": [
+										"nuwe2-nea",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"asteroid",
+										"getOneById",
+										"60688b8f14e07e14dc30e186"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
 		}
 	]
 }

@@ -39,7 +39,7 @@ router.post('/editUserById/:id', async (req, res, next) => {
     const { id } = req.params
     await User.findByIdAndUpdate(id, req.body)
         .exec(result => {
-            res.status(200).send('User')
+            res.status(200).send('User edited')
         })
 })
 
