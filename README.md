@@ -12,7 +12,7 @@ Remember to create .env file with MONGODB_URL and JWT_SECRET
 
 ---
 
-### Routes
+## Routes
 #### NEA routes
 /asteroid/insertAll - insert the CSV to MongoDB
 
