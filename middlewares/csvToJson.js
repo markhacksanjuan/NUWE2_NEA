@@ -1,4 +1,4 @@
-const csvFilePath = '../OrbitalParameters_PHAs.csv'
+const csvFilePath = '../assets/OrbitalParameters_PHAs.csv'
 const csv = require('csvtojson')
 const path = require('path')
 
